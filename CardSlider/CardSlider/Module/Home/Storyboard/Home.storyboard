@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7tV-wz-gvO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="Fqy-Bj-0ZN">
+            <objects>
+                <viewController id="p0w-gn-ov3" customClass="HomeViewController" customModule="CardSlider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FS2-it-3yj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TnE-Pd-BPS">
+                                <rect key="frame" x="20" y="415" width="374" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kog-HA-Axh">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Swipe To Remove (Tinder)">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="TinderLikeButtonTapped:" destination="p0w-gn-ov3" eventType="touchUpInside" id="Fq1-DX-XeV"/>
+                                            <segue destination="HMM-UN-70o" kind="show" id="MIG-Yo-cjZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mV-sV-pxs">
+                                        <rect key="frame" x="0.0" y="70" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Card Slider">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cardSliderButtonTapped:" destination="p0w-gn-ov3" eventType="touchUpInside" id="hfA-b8-zYE"/>
+                                            <segue destination="efb-su-G9D" kind="show" id="Yoe-gQ-1Q9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="O49-tp-31q"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TnE-Pd-BPS" firstAttribute="centerY" secondItem="LIZ-Yx-H6F" secondAttribute="centerY" id="NDX-UL-6wT"/>
+                            <constraint firstItem="LIZ-Yx-H6F" firstAttribute="trailing" secondItem="TnE-Pd-BPS" secondAttribute="trailing" constant="20" id="Nfe-pG-Ns7"/>
+                            <constraint firstItem="TnE-Pd-BPS" firstAttribute="leading" secondItem="LIZ-Yx-H6F" secondAttribute="leading" constant="20" id="gIe-D5-5Bc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LIZ-Yx-H6F"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DHU-el-95k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5g-Ji-TdI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802.89855072463774" y="67.633928571428569"/>
+        </scene>
+        <!--Tinder Shuffle View Controller-->
+        <scene sceneID="dVC-69-SoY">
+            <objects>
+                <viewController id="HMM-UN-70o" customClass="TinderShuffleViewController" customModule="CardSlider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6co-JP-kLP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teD-Fc-SEa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jxp-HF-d0s">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6c-gg-5ok">
+                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="50"/>
+                                        <color key="tintColor" red="0.7725490196" green="0.17254901959999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Dislike" image="heart.slash.fill" catalog="system">
+                                            <color key="titleColor" red="0.7725490196" green="0.17254901959999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dislikeButtonTapped:" destination="HMM-UN-70o" eventType="touchUpInside" id="Lli-tZ-BlF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDb-hL-Ozg">
+                                        <rect key="frame" x="141.5" y="0.0" width="131" height="50"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Previous" image="escape" catalog="system">
+                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showPreviousCardTapped:" destination="HMM-UN-70o" eventType="touchUpInside" id="WoU-dS-pGS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="te8-XQ-YYg">
+                                        <rect key="frame" x="282.5" y="0.0" width="131.5" height="50"/>
+                                        <color key="tintColor" red="0.7725490196" green="0.17254901959999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Like" image="heart.fill" catalog="system">
+                                            <color key="titleColor" red="0.7725490196" green="0.17254901959999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="likeButtonTapped:" destination="HMM-UN-70o" eventType="touchUpInside" id="W41-W3-kPj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fqt-ax-LBI"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="teD-Fc-SEa" firstAttribute="top" secondItem="adY-qT-NON" secondAttribute="top" id="GpB-cy-jqA"/>
+                            <constraint firstItem="Jxp-HF-d0s" firstAttribute="bottom" secondItem="adY-qT-NON" secondAttribute="bottom" id="Lt1-H9-S8M"/>
+                            <constraint firstItem="teD-Fc-SEa" firstAttribute="leading" secondItem="adY-qT-NON" secondAttribute="leading" id="PfB-T4-pc0"/>
+                            <constraint firstItem="adY-qT-NON" firstAttribute="trailing" secondItem="teD-Fc-SEa" secondAttribute="trailing" id="Teu-gq-gw2"/>
+                            <constraint firstItem="Jxp-HF-d0s" firstAttribute="top" secondItem="teD-Fc-SEa" secondAttribute="bottom" constant="10" id="W21-jx-buA"/>
+                            <constraint firstItem="adY-qT-NON" firstAttribute="trailing" secondItem="Jxp-HF-d0s" secondAttribute="trailing" id="m5H-DJ-uw8"/>
+                            <constraint firstItem="Jxp-HF-d0s" firstAttribute="leading" secondItem="adY-qT-NON" secondAttribute="leading" id="rdC-Bb-Wb2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="adY-qT-NON"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fys-do-qjV"/>
+                    <connections>
+                        <outlet property="swipableView" destination="teD-Fc-SEa" id="5Mc-ow-Cy5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cF-SP-6HE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="402.89855072463769" y="720.53571428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9oM-us-BtS">
+            <objects>
+                <viewController id="efb-su-G9D" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N6B-iN-7qq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="GyG-yT-1tn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cs3-qi-ehn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2zg-ac-Sw8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1171" y="721"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6zD-ZS-snH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7tV-wz-gvO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dOf-dx-1Lh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="p0w-gn-ov3" kind="relationship" relationship="rootViewController" id="VVi-YA-tB6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uLs-Zq-GIE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107.24637681159422" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="escape" catalog="system" width="64" height="60"/>
+        <image name="heart.fill" catalog="system" width="64" height="54"/>
+        <image name="heart.slash.fill" catalog="system" width="64" height="56"/>
+    </resources>
+</document>

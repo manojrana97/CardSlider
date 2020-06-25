@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardView" customModule="CardSlider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="611"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3G1-ex-frf">
+                    <rect key="frame" x="0.0" y="94" width="414" height="517"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frl-hE-1TE">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="wzV-1D-W9Q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3G1-ex-frf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2G1-V7-gDT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3G1-ex-frf" secondAttribute="bottom" id="5ea-q3-ja6"/>
+                <constraint firstItem="frl-hE-1TE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Z9C-DI-SF4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="frl-hE-1TE" secondAttribute="trailing" id="a2o-Ns-Vua"/>
+                <constraint firstItem="3G1-ex-frf" firstAttribute="top" secondItem="frl-hE-1TE" secondAttribute="bottom" id="o4e-MD-pUw"/>
+                <constraint firstItem="frl-hE-1TE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="rfI-jo-WpU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3G1-ex-frf" secondAttribute="trailing" id="rxk-th-zOB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="pageNumberLabel" destination="frl-hE-1TE" id="1Ns-0e-jxb"/>
+                <outlet property="textLabel" destination="3G1-ex-frf" id="9Go-6x-On1"/>
+            </connections>
+            <point key="canvasLocation" x="108.69565217391305" y="17.075892857142858"/>
+        </view>
+    </objects>
+</document>

@@ -10,6 +10,8 @@
 		18394D3124A4CCE70007C224 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18394D3024A4CCE70007C224 /* CardView.swift */; };
 		18394D3324A4CCF70007C224 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18394D3224A4CCF70007C224 /* CardView.xib */; };
 		18394D4124A4E8DF0007C224 /* CardDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 18394D4024A4E8DF0007C224 /* CardDetails.json */; };
+		183BCD1624A70E0900BE5AFF /* CarouselEffectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183BCD1524A70E0900BE5AFF /* CarouselEffectController.swift */; };
+		1840F6E624A5A87B0043673D /* CommonUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840F6E524A5A87B0043673D /* CommonUtilities.swift */; };
 		186D856524A46E3F0019BED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D856424A46E3F0019BED2 /* AppDelegate.swift */; };
 		186D856724A46E3F0019BED2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D856624A46E3F0019BED2 /* SceneDelegate.swift */; };
 		186D856E24A46E420019BED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186D856D24A46E420019BED2 /* Assets.xcassets */; };
@@ -19,6 +21,7 @@
 		186D858E24A4756D0019BED2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D858D24A4756D0019BED2 /* HomeViewController.swift */; };
 		186D859024A4779B0019BED2 /* TinderShuffleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D858F24A4779B0019BED2 /* TinderShuffleViewController.swift */; };
 		186D859524A478DC0019BED2 /* CardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D859424A478DC0019BED2 /* CardDetail.swift */; };
+		187806F024A6DABF0072FAD8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187806EF24A6DABF0072FAD8 /* QuartzCore.framework */; };
 		BAC8B395C9F358610F8E189E /* Pods_CardSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1510AB93AEB038E6C370F252 /* Pods_CardSlider.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,8 @@
 		18394D3024A4CCE70007C224 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		18394D3224A4CCF70007C224 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		18394D4024A4E8DF0007C224 /* CardDetails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CardDetails.json; path = CardSlider/CardDetails.json; sourceTree = SOURCE_ROOT; };
+		183BCD1524A70E0900BE5AFF /* CarouselEffectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselEffectController.swift; sourceTree = "<group>"; };
+		1840F6E524A5A87B0043673D /* CommonUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtilities.swift; sourceTree = "<group>"; };
 		186D856124A46E3F0019BED2 /* CardSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186D856424A46E3F0019BED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		186D856624A46E3F0019BED2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +44,8 @@
 		186D858D24A4756D0019BED2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		186D858F24A4779B0019BED2 /* TinderShuffleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderShuffleViewController.swift; sourceTree = "<group>"; };
 		186D859424A478DC0019BED2 /* CardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetail.swift; sourceTree = "<group>"; };
+		187806EE24A6D9950072FAD8 /* CardSlider-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CardSlider-Bridging-Header.h"; sourceTree = "<group>"; };
+		187806EF24A6DABF0072FAD8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9827C29EF606D72FFDED7BB0 /* Pods-CardSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardSlider.release.xcconfig"; path = "Target Support Files/Pods-CardSlider/Pods-CardSlider.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187806F024A6DABF0072FAD8 /* QuartzCore.framework in Frameworks */,
 				BAC8B395C9F358610F8E189E /* Pods_CardSlider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +69,14 @@
 				18394D3224A4CCF70007C224 /* CardView.xib */,
 			);
 			path = Nib;
+			sourceTree = "<group>";
+		};
+		1840F6E424A5A85C0043673D /* CommonUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				1840F6E524A5A87B0043673D /* CommonUtilities.swift */,
+			);
+			path = CommonUtilities;
 			sourceTree = "<group>";
 		};
 		186D855824A46E3F0019BED2 = {
@@ -87,12 +103,14 @@
 			children = (
 				186D859324A478C70019BED2 /* Model */,
 				186D858224A46F1E0019BED2 /* Module */,
+				1840F6E424A5A85C0043673D /* CommonUtilities */,
 				186D856424A46E3F0019BED2 /* AppDelegate.swift */,
 				186D856624A46E3F0019BED2 /* SceneDelegate.swift */,
 				186D856D24A46E420019BED2 /* Assets.xcassets */,
 				186D856F24A46E420019BED2 /* LaunchScreen.storyboard */,
 				186D857224A46E420019BED2 /* Info.plist */,
 				18394D4024A4E8DF0007C224 /* CardDetails.json */,
+				187806EE24A6D9950072FAD8 /* CardSlider-Bridging-Header.h */,
 			);
 			path = CardSlider;
 			sourceTree = "<group>";
@@ -128,6 +146,7 @@
 			children = (
 				186D858D24A4756D0019BED2 /* HomeViewController.swift */,
 				186D858F24A4779B0019BED2 /* TinderShuffleViewController.swift */,
+				183BCD1524A70E0900BE5AFF /* CarouselEffectController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -152,6 +171,7 @@
 		BC7CB234966829303A0EFF15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				187806EF24A6DABF0072FAD8 /* QuartzCore.framework */,
 				1510AB93AEB038E6C370F252 /* Pods_CardSlider.framework */,
 			);
 			name = Frameworks;
@@ -275,10 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183BCD1624A70E0900BE5AFF /* CarouselEffectController.swift in Sources */,
 				186D856524A46E3F0019BED2 /* AppDelegate.swift in Sources */,
 				186D859024A4779B0019BED2 /* TinderShuffleViewController.swift in Sources */,
 				186D856724A46E3F0019BED2 /* SceneDelegate.swift in Sources */,
 				186D858E24A4756D0019BED2 /* HomeViewController.swift in Sources */,
+				1840F6E624A5A87B0043673D /* CommonUtilities.swift in Sources */,
 				186D859524A478DC0019BED2 /* CardDetail.swift in Sources */,
 				18394D3124A4CCE70007C224 /* CardView.swift in Sources */,
 			);
@@ -425,6 +447,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.manoj.CardSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CardSlider/CardSlider-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -443,6 +466,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.manoj.CardSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CardSlider/CardSlider-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

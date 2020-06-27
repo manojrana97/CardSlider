@@ -20,6 +20,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kog-HA-Axh">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="Swipe To Remove (Tinder)">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -31,6 +32,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mV-sV-pxs">
                                         <rect key="frame" x="0.0" y="70" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.10361656" green="0.59136711409999998" blue="0.28258660270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="Card Slider">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -75,19 +77,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jxp-HF-d0s">
                                 <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6c-gg-5ok">
-                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="50"/>
-                                        <color key="tintColor" red="0.7725490196" green="0.17254901959999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Dislike" image="heart.slash.fill" catalog="system">
-                                            <color key="titleColor" red="0.7725490196" green="0.17254901959999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="dislikeButtonTapped:" destination="HMM-UN-70o" eventType="touchUpInside" id="Lli-tZ-BlF"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDb-hL-Ozg">
-                                        <rect key="frame" x="141.5" y="0.0" width="131" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="202" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                                         <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
                                         <state key="normal" title="Previous" image="escape" catalog="system">
                                             <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -96,13 +91,16 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="te8-XQ-YYg">
-                                        <rect key="frame" x="282.5" y="0.0" width="131.5" height="50"/>
-                                        <color key="tintColor" red="0.7725490196" green="0.17254901959999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Like" image="heart.fill" catalog="system">
-                                            <color key="titleColor" red="0.7725490196" green="0.17254901959999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="212" y="0.0" width="202" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" title="Restart" image="power" catalog="system">
+                                            <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="likeButtonTapped:" destination="HMM-UN-70o" eventType="touchUpInside" id="W41-W3-kPj"/>
+                                            <action selector="restartButtonTapped:" destination="HMM-UN-70o" eventType="touchUpInside" id="b3x-NW-HGg"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -132,17 +130,32 @@
             </objects>
             <point key="canvasLocation" x="402.89855072463769" y="720.53571428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Carousel Effect Controller-->
         <scene sceneID="9oM-us-BtS">
             <objects>
-                <viewController id="efb-su-G9D" sceneMemberID="viewController">
+                <viewController id="efb-su-G9D" customClass="CarouselEffectController" customModule="CardSlider" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N6B-iN-7qq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sS-qV-pVO" customClass="iCarousel">
+                                <rect key="frame" x="50" y="138" width="314" height="644"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GyG-yT-1tn" firstAttribute="trailing" secondItem="8sS-qV-pVO" secondAttribute="trailing" constant="50" id="Gic-DV-Plc"/>
+                            <constraint firstItem="8sS-qV-pVO" firstAttribute="top" secondItem="GyG-yT-1tn" secondAttribute="top" constant="50" id="bYo-Ze-qYf"/>
+                            <constraint firstItem="8sS-qV-pVO" firstAttribute="leading" secondItem="GyG-yT-1tn" secondAttribute="leading" constant="50" id="cnZ-i3-kbW"/>
+                            <constraint firstItem="GyG-yT-1tn" firstAttribute="bottom" secondItem="8sS-qV-pVO" secondAttribute="bottom" constant="80" id="tbj-MZ-gQl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GyG-yT-1tn"/>
                     </view>
                     <navigationItem key="navigationItem" id="cs3-qi-ehn"/>
+                    <connections>
+                        <outlet property="carouselView" destination="8sS-qV-pVO" id="bK3-RZ-rMb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zg-ac-Sw8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,7 +182,6 @@
     </scenes>
     <resources>
         <image name="escape" catalog="system" width="64" height="60"/>
-        <image name="heart.fill" catalog="system" width="64" height="54"/>
-        <image name="heart.slash.fill" catalog="system" width="64" height="56"/>
+        <image name="power" catalog="system" width="64" height="62"/>
     </resources>
 </document>

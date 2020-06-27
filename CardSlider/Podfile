@@ -9,6 +9,5 @@ target 'CardSlider' do
    pod 'ObjectMapper', '~> 3.4.2' #Manages Object maping
    pod 'Shuffle-iOS'
    pod "Koloda"
-  
-
+   pod 'iCarousel'
 end

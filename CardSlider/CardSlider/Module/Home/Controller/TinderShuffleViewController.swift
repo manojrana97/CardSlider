@@ -1,15 +1,17 @@
-//
-//  TinderShuffleViewController.swift
-//  CardSlider
-//
-//  Created by manoj on 25/06/20.
-//  Copyright © 2020 Manoj. All rights reserved.
-//
-
 import UIKit
 import Shuffle_iOS
-import ObjectMapper
+/**
+This Class shows the card details in a tinder like card slider.
 
+- Author:
+Manoj Kumar Rana
+
+- Date:
+26/06/20
+
+- Version:
+1.0
+*/
 class TinderShuffleViewController: UIViewController {
     //MARK:- Properties
     var cardDetails:[CardDetail] = []
@@ -21,7 +23,9 @@ class TinderShuffleViewController: UIViewController {
     //MARK:- View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        //card details are coming from local json file
         cardDetails = CommonUtilities.getCardDetail()
+        
         swipableView.addSubview(cardStack)
         cardStack.frame = view.frame
         cardStack.dataSource = self

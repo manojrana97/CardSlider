@@ -1,14 +1,17 @@
-//
-//  CrauselEffectController.swift
-//  CardSlider
-//
-//  Created by manoj on 26/06/20.
-//  Copyright © 2020 Manoj. All rights reserved.
-//
-
 import UIKit
 import iCarousel
+/**
+This Class shows the card details in a card slider using Carousel Animation.
 
+- Author:
+Manoj Kumar Rana
+
+- Date:
+26/06/20
+
+- Version:
+1.0
+*/
 class CarouselEffectController: UIViewController {
     //MARK:- IBOutlets
     @IBOutlet weak private var carouselView: iCarousel!
